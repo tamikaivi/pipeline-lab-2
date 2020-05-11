@@ -19,7 +19,7 @@ phases:
 
   post_build:
     commands:
-      - echo pushmail
+      - echo pushmai2nuevofun
 
 artifacts:
   files:
