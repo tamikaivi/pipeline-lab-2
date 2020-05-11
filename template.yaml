@@ -30,3 +30,7 @@ Resources:
             - logs:PutLogEvents
             Resource: arn:aws:logs:*:*:*
 
+artifacts:
+  files:
+    - template.yaml
+  name: upbCodepipeline
