@@ -14,7 +14,6 @@ i=0 p=0 b=0 d=0
 CF_FILE="/tmp/cf_file.txt"
 DEPLOYMENTS_BUCKET="cloud-formation-upb-cloud9-shell-template"
 
-
 case "$1" in
   -i|--install)
     i=1
@@ -60,7 +59,7 @@ aws cloudformation deploy \
   --no-fail-on-empty-changeset \
   --template-file $CF_FILE \
   --parameter-overrides Project=cf_lab2  \
-  --stack-name "code-pipeline" \
+  --stack-name "codepipeline-stack" \
   --capabilities CAPABILITY_NAMED_IAM
 fi
 

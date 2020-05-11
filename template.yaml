@@ -7,7 +7,7 @@ Resources:
   MyLambdaRole:
     Type: AWS::IAM::Role
     Properties:
-      RoleName: codepipeline-labdaroles
+      RoleName: my-lambpipeline-lab-2
       AssumeRolePolicyDocument:
         Version: '2012-10-17'
         Statement:
@@ -29,8 +29,3 @@ Resources:
             - logs:CreateLogStream
             - logs:PutLogEvents
             Resource: arn:aws:logs:*:*:*
-
-artifacts:
-  files:
-    - template.yaml
-  name: upbCodepipeline
